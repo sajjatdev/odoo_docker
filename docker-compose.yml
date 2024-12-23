@@ -8,7 +8,7 @@ services:
       - "8069:8069"
     volumes:
       - ./odoo17:/var/lib/odoo    
-      - ./config:/etc/odoo              
+      - ./etc:/etc/odoo              
       - ./addons:/mnt/extra-addons       
     environment:
       - DB_HOST=db
