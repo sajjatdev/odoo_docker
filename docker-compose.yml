@@ -6,8 +6,7 @@ services:
       - db
     ports:
       - "8069:8069"
-    volumes:
-      - ./odoo17:/var/lib/odoo    
+    volumes:  
       - ./etc:/etc/odoo              
       - ./addons:/mnt/extra-addons       
     environment:
